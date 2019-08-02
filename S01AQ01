@@ -1,0 +1,5 @@
+def wish(greeting):
+    wish = "hello " + greeting
+    print(wish)
+
+wish(input("enter user name\n"))
