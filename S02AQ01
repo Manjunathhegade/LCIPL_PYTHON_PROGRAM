@@ -1,0 +1,6 @@
+def car(start,end,fuel):
+    car_millege = (end - start) / fuel
+    return car_millege
+
+x = car(int(input("enter starting pont\n")),int(input("enter end pont\n")),int(input("enter fuel consumption\n")))
+print(x)    
