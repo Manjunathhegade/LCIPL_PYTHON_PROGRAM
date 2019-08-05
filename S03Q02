@@ -1,0 +1,28 @@
+def do_1digit_oper(n):
+    num1 = n + 7
+    return num1
+    
+def do_2digit_oper(n):
+    num1 = n ** 5
+    return num1
+def do_3digit_oper(n):
+    num3 = int(input("enter another number"))
+    num1 = n + num3
+    return num1
+
+num=int(input("enter num"))
+    
+if num > 0 and num < 10:
+    for_single = do_1digit_oper(num)
+    print(for_single)
+if num > 9 and num < 100:
+    for_two = do_2digit_oper(num)
+    print(for_two)
+if num > 99 and num < 1000:
+    for_three = do_3digit_oper(num)
+    print(for_three)
+    
+                
+    
+            
+
