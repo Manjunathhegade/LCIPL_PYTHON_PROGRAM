@@ -1,0 +1,7 @@
+name = input("enter your name\n")
+name1 = name.split()
+print("Name = ",name1[0])
+print("UserName = ",name1[1])
+print(name.upper())
+print("----------  -----")
+print(name.lower())
