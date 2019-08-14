@@ -1,0 +1,7 @@
+def square(number):
+    for i in range(number):
+       squares = i * i
+       if squares > 1 and squares < number:
+           print(squares)
+
+square(int(input("enter ur number\n")))
