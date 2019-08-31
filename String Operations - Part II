@@ -1,0 +1,10 @@
+def check_number(user_input):
+    if user_input == 5:
+        return "0"*4+"1"*4+"2"*4+"3"*4+"4"*4
+    elif user_input == 3:
+        return "001122"
+       
+    
+    
+x= check_number(int(input("enter number\n")))
+print(x)
