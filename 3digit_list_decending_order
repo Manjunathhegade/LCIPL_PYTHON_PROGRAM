@@ -1,0 +1,14 @@
+def sorted():
+    lst=[]
+    while True:
+        user_input = int(input("enter your number\n"))
+        if user_input == 0:
+            break
+        elif user_input > 99 and user_input <= 999:
+            lst.append(user_input)
+            lst.sort(reverse=True)
+    return lst
+
+x = sorted()
+print(x)
+            
