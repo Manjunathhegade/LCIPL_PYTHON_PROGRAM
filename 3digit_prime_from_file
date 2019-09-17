@@ -1,0 +1,19 @@
+def num_file():
+    lst = []    
+    with open("num.txt") as rf:
+        rf_chunk = rf.read().split()
+        for number in rf_chunk:
+            number = int(number)
+            if number > 99 and number <= 999:
+                for i in range(2,number):
+                    if (number % i) == 0:
+                        break
+                else:
+                    lst.append(number)
+                    
+            else:
+                continue
+    lst.sort(reverse=True)
+    return lst
+
+print(num_file())
