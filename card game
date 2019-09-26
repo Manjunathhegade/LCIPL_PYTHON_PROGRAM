@@ -1,0 +1,30 @@
+#10 players are 0 to 9
+import random
+def game():
+    count=0
+    list = []
+    list1 = []
+    list2=[]
+    dic ={}
+    for item in range(99,1000):
+            list.append(item)
+    while count<10:       
+        rand_numbers = random.choice(list)
+        if rand_numbers not in list1:
+            list1.append(rand_numbers)
+            count+=1
+        else:
+            continue
+    for item in list1:
+        rand_index=list1.index(item)
+        dic[rand_index]=item
+
+    winner = max(list1)
+    winner_index = list1.index(winner)
+    print("winner is",winner_index,"who got number ",winner)
+
+    
+
+    return dic
+
+print(game())
