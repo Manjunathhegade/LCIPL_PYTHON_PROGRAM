@@ -1,0 +1,32 @@
+def student_file():
+    list = []
+    list1 = []
+    list2= []
+    list3 =[]
+    with open("students.txt") as rf:
+        rf_chunk = rf.read().split()
+
+    for item in rf_chunk:
+        list.append(item)
+
+    for item1 in list:
+        item1 = int(item1[-2:])
+        if item1 > 90 and item1 <= 100:
+            list1.append(item1)
+        
+
+    for item2 in list1:
+        item2 = str(item2)
+        list2.append(item2)
+
+    for item3 in list:
+        for item4 in list2:
+            if item4 in item3:
+                list3.append(item3)
+                
+
+
+       
+    return list3
+
+print(student_file())
