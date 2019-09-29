@@ -1,6 +1,5 @@
 left  = [4, 17, 21, 47, 69, 75, 91, 97]
 right = [3, 10, 11, 14, 18, 21, 44, 55, 76,97]
-list = []
 def sorting(left,right):
     adding = left+right
     lenght = len(adding)
