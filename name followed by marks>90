@@ -1,8 +1,8 @@
 def SSLC_mark():
-    list=[]
-    list1 = []
-    list2 = []
-    list3 = []
+    student_names=[]
+    student_marks = []
+    marks_in_char = []
+    student_90 = []
     while True:
         student_marks = input("enter your name with total marks\n")
         if student_marks == " ":
@@ -10,21 +10,21 @@ def SSLC_mark():
         else:
             list.append(student_marks)
     
-    for item in list:
+    for item in student_names:
         item = int(item[-2:])
         if item > 90 and item <= 100:
-            list1.append(item)
+            student_marks.append(item)
 
 
-    for item1 in list1:
+    for item1 in student_marks:
         item1 = str(item1)
-        list2.append(item1)
+        marks_in_char.append(item1)
 
-    for item2 in list:
-        for item3 in list2:
+    for item2 in student_names:
+        for item3 in marks_in_char:
             if item3 in item2:
-                list3.append(item2)
+                student_90.append(item2)
         
-    return list3
+    return student_90
 
 print(SSLC_mark())
