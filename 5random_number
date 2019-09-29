@@ -2,26 +2,26 @@ import random
 def rand():
     count = 0
     c=0
-    list = []
-    list2 = []
-    list3 = []
+    user_10numbers = []
+    random_5numbers = []
+    sorted_numbers = []
     while count < 10:
         numbers = int(input("enter your numbers\n"))
-        list.append(numbers)
+        user_10numbers.append(numbers)
         count+=1
 
     while c<5:
-        random_number = random.choice(list)
-        list2.append(list.index(random_number))
+        random_number = random.choice(user_10numbers)
+        random_5numbers.append(user_10numbers.index(random_number))
         c+=1
    
 
-    list2.sort()
-    for item in list2:
-        rand_5numbers = list[item]
-        list3.append(rand_5numbers)
+    random_5numbers.sort()
+    for item in random_5numbers :
+        rand_5numbers = user_10numbers[item]
+        sorted_numbers.append(rand_5numbers)
 
-    return list3
+    return sorted_numbers
 
 
 print(rand())
